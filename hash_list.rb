@@ -13,4 +13,8 @@ list_of_people = [
   { :name => "Fatimah", :age => 31 },
   { :name => "Carl", :age => 9 },
 ]
-
+list_of_people.each do |sym|
+  if sym[:age] >= 16
+    p sym[:name]
+  end
+end
